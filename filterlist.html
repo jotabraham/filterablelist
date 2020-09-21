@@ -55,15 +55,14 @@
 
     <script>
         // get input element
-        let filterInput = document.querySelector('#filterInput');
+        const filterInput = document.getElementById('filterInput');
 
         // add event listener
         filterInput.addEventListener('keyup', filterNames);
 
         function filterNames(){
             // get value of input
-            let filterValue = document.getElementById('filterInput').value.toUpperCase();
-        };
+            const filterValue = document.getElementById('filterInput').value.toUpperCase();
 
         //get names ul
         let ul = document.getElementById('names');
@@ -80,6 +79,7 @@
                 li[i].style.display = 'none';
             }
         }
+    };
     </script>
 </body>
 </html>
